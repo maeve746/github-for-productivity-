@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 220 16% 7%;
+  --foreground: 150 20% 94%;
+  --card: 220 14% 10%;
+  --card-foreground: 150 20% 94%;
+  --muted: 220 12% 15%;
+  --muted-foreground: 218 10% 62%;
+  --border: 220 12% 19%;
+  --input: 220 12% 18%;
+  --ring: 145 64% 42%;
+  --primary: 145 64% 42%;
+  --primary-foreground: 152 74% 9%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: hsl(var(--background));
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(circle at 50% -10%, rgba(50, 185, 112, 0.14), transparent 30rem),
+    hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
